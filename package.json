@@ -1,6 +1,6 @@
 {
   "name": "@wow-ui/wow-ui",
-  "version": "1.0.1e",
+  "version": "1.0.1f",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
