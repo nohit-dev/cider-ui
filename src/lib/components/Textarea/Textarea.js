@@ -11,9 +11,9 @@ const Textarea = ({
 		<div
 			className={
 				classNames(
-					"rounded-3xl",
-					"h-full",
-					"pt-1.5 px-1.5",
+					"rounded-[1rem]",
+					"w-full",
+					"p-1",
 					getGradient(style)
 				)}
 		>
@@ -23,9 +23,9 @@ const Textarea = ({
 				className={
 					classNames(
 						"w-full",
-						"h-full",
-						"rounded-3xl",
-						"text-md",
+						"block align-bottom",
+						"rounded-[0.8rem]",
+						"text-md leading-tight",
 						"py-2 px-4",
 						"bg-white text-black",
 					)}>

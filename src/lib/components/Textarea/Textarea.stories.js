@@ -2,7 +2,7 @@ import React from 'react';
 import Textarea from './Textarea'
 
 export default {
-	title: 'wow-UI/Textarea',
+	title: 'cider-UI/Textarea',
 	component: Textarea,
 }
 
