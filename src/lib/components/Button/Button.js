@@ -36,7 +36,7 @@ const Button = ({
 
 Button.propTypes = {
 	label: PropTypes.string.isRequired,
-	style: PropTypes.oneOf(["primary", "secondary", "success", "warning", "processing", "error"]).isRequired,
+	style: PropTypes.oneOf(["primary", "secondary"]).isRequired,
 	onClick: PropTypes.func.isRequired,
 	filled: PropTypes.bool,
 }
