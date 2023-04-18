@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button'
 
 export default {
-	title: 'wow-UI/Button',
+	title: 'cider-ui/Button',
 	component: Button,
 }
 

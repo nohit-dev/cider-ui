@@ -2,7 +2,7 @@ import React from 'react';
 import Input from './Input'
 
 export default {
-	title: 'wow-UI/Input',
+	title: 'cider-ui/Input',
 	component: Input,
 }
 

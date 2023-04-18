@@ -2,7 +2,7 @@ import React from 'react';
 import Badge from './Badge'
 
 export default {
-	title: 'wow-UI/Badge',
+	title: 'cider-ui/Badge',
 	component: Badge,
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Tag from './Tag'
 
 export default {
-	title: 'wow-UI/Tag',
+	title: 'cider-ui/Tag',
 	component: Tag,
 }
 
