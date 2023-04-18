@@ -1,4 +1,4 @@
-# WOW UI
+# CIDER UI
 A brand new React component library built with TailwindCSS and StoryBook
 
 ---
