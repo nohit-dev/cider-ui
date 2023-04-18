@@ -1,15 +1,16 @@
 import React from 'react';
-import Tag from './Tag'
+import Badge from './Badge'
 
 export default {
-	title: 'wow-UI/Tag',
-	component: Tag,
+	title: 'wow-UI/Badge',
+	component: Badge,
 }
 
-const Template = (args) => <Tag {...args} />
+const Template = (args) => <Badge {...args} />
 
 export const Primary = Template.bind({})
 export const Secondary = Template.bind({})
+export const New = Template.bind({})
 export const Success = Template.bind({})
 export const Warning = Template.bind({})
 export const Processing = Template.bind({})
@@ -38,4 +39,8 @@ Processing.args = {
 Error.args = {
 	label: 'Error',
 	style: 'error',
+}
+New.args = {
+	label: 'New',
+	style: 'new',
 }
