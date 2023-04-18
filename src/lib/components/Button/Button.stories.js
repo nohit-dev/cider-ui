@@ -15,15 +15,18 @@ export const Filled = Template.bind({})
 Primary.args = {
 	label: 'Primary',
 	style: 'primary',
+	size: "medium",
 	filled: false
 }
 Secondary.args = {
 	label: 'Secondary',
 	style: 'secondary',
+	size: "medium",
 	filled: false
 }
 Filled.args = {
 	label: 'Filled',
 	style: 'primary',
+	size: "medium",
 	filled: true
 }

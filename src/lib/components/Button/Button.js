@@ -6,16 +6,19 @@ const Button = ({
 	label,
 	filled,
 	style,
+	size,
 	onClick,
 }) => {
-	console.log(getGradient(style))
 	return (
 		<button
 			onClick={onClick}
 			className={
 				classNames(
 					"rounded-full",
-					"hover:scale-105 transition duration-150",
+					size === "small" && "scale-75 hover:scale-[.8]",
+					size === "medium" && "scale-100 hover:scale-105",
+					size === "large" && "scale-[1.2] hover:scale-[1.25]",
+					"transition duration-150",
 					filled ? "" : "p-1.5",
 					getGradient(style)
 				)}
@@ -37,6 +40,7 @@ const Button = ({
 Button.propTypes = {
 	label: PropTypes.string.isRequired,
 	style: PropTypes.oneOf(["primary", "secondary"]).isRequired,
+	size: PropTypes.oneOf(["small", 'medium', "large"]),
 	onClick: PropTypes.func.isRequired,
 	filled: PropTypes.bool,
 }
@@ -44,6 +48,7 @@ Button.propTypes = {
 Button.defaultProps = {
 	label: 'Button',
 	style: 'primary',
+	size: "medium",
 	filled: false
 }
 
