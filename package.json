@@ -1,6 +1,6 @@
 {
   "name": "@wow-ui/wow-ui",
-  "version": "1.0.1d",
+  "version": "1.0.1e",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -28,6 +28,7 @@
     "build-storybook": "storybook build -s public",
     "build:tailwind": "postcss src/lib/styles/tailwind.css -o src/lib/styles/main.css",
     "build:tailwind-prod": "cross-env NODE_ENV=production postcss src/lib/styles/tailwind.css -o src/lib/styles/main.css",
+    "build:prod": "npm run build:tailwind-prod && npm run compile",
     "clean": "rimraf dist",
     "compile": "npm run clean && cross-env NODE_ENV=production babel src/lib/ --out-dir dist --copy-files"
   },
