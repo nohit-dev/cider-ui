@@ -1,6 +1,6 @@
 {
   "name": "@cider-ui/cider-ui",
-  "version": "1.0.1f",
+  "version": "1.0.1g",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.js",

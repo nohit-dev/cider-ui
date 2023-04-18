@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { classNames, getGradient } from '../../utils';
 
-const Input = ({
+const Textarea = ({
 	placeholder,
 	style,
 	type,
@@ -11,38 +11,38 @@ const Input = ({
 		<div
 			className={
 				classNames(
-					"rounded-full",
-					"transition duration-150",
-					"p-1",
+					"rounded-3xl",
+					"h-full",
+					"pt-1.5 px-1.5",
 					getGradient(style)
 				)}
 		>
-			<input
+			<textarea
 				placeholder={placeholder}
 				type={type}
 				className={
 					classNames(
 						"w-full",
-						"rounded-full",
-						"text-lg",
-						"py-2 px-6",
+						"h-full",
+						"rounded-3xl",
+						"text-md",
+						"py-2 px-4",
 						"bg-white text-black",
-					)} />
+					)}>
+			</textarea>
 		</div>
 
 	);
 };
 
-Input.propTypes = {
+Textarea.propTypes = {
 	placeholder: PropTypes.string.isRequired,
 	style: PropTypes.oneOf(["primary", "secondary"]).isRequired,
-	type: PropTypes.oneOf(["text", "password", "email", "number", "tel"]).isRequired,
 }
 
-Input.defaultProps = {
-	placeholder: 'Input',
+Textarea.defaultProps = {
+	placeholder: 'Textarea',
 	style: 'primary',
-	type: 'text',
 }
 
-export default Input
+export default Textarea
