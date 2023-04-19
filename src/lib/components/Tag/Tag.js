@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { classNames, getGradient } from '../../utils';
 
-const Button = ({
+const Tag = ({
 	label,
 	style,
 }) => {
@@ -22,14 +22,14 @@ const Button = ({
 	);
 };
 
-Button.propTypes = {
+Tag.propTypes = {
 	label: PropTypes.string.isRequired,
 	style: PropTypes.oneOf(["primary", "secondary", "success", "warning", "processing", "error", "new"]).isRequired,
 }
 
-Button.defaultProps = {
+Tag.defaultProps = {
 	label: 'Button',
 	style: 'primary',
 }
 
-export default Button
+export default Tag

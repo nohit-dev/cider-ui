@@ -18,6 +18,8 @@ const getGradient = (style) => {
       color = "from-yellow-200 via-yellow-400 to-yellow-500"; break;
     case "processing":
       color = "from-purple-200 via-purple-400 to-purple-500"; break;
+    case "info":
+      color = "from-purple-200 via-purple-400 to-purple-500"; break;
     case "error":
       color = "from-red-200 via-red-400 to-red-500"; break;
     case "new":
