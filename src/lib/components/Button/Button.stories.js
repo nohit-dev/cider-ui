@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Button'
+import { AcademicCapIcon } from "@heroicons/react/24/outline"
 
 export default {
 	title: 'cider-ui/Button',
@@ -11,22 +12,31 @@ const Template = (args) => <Button {...args} />
 export const Primary = Template.bind({})
 export const Secondary = Template.bind({})
 export const Filled = Template.bind({})
+export const WithLeftIcon = Template.bind({})
+export const WithRightIcon = Template.bind({})
 
 Primary.args = {
 	label: 'Primary',
-	style: 'primary',
-	size: "medium",
-	filled: false
+	leftIcon: <AcademicCapIcon />,
+	rightIcon: <AcademicCapIcon />,
 }
 Secondary.args = {
 	label: 'Secondary',
 	style: 'secondary',
-	size: "medium",
-	filled: false
 }
 Filled.args = {
 	label: 'Filled',
 	style: 'primary',
-	size: "medium",
 	filled: true
+}
+
+WithLeftIcon.args = {
+	label: "With Left Icon",
+	leftIcon: <AcademicCapIcon />,
+}
+
+WithRightIcon.args = {
+	label: "With Right Icon",
+	filled: true,
+	rightIcon: <AcademicCapIcon />
 }

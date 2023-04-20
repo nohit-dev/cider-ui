@@ -8,6 +8,9 @@ const Button = ({
 	style,
 	size,
 	onClick,
+	leftIcon,
+	rightIcon,
+	...args
 }) => {
 	return (
 		<button
@@ -22,6 +25,7 @@ const Button = ({
 					filled ? "" : "p-1.5",
 					getGradient(style)
 				)}
+				{...args}
 		>
 			<div className={
 				classNames(
@@ -30,8 +34,14 @@ const Button = ({
 					"rounded-full",
 					"text-lg",
 					"py-2 px-6",
-					filled ? "bg-transparent text-white" : "bg-white text-black",
-				)}>{label}</div>
+					filled ? "bg-transparent text-white fill-white" : "bg-white text-black fill-black",
+					"flex",
+					"items-center",
+				)}>
+				{!!leftIcon &&<span className='h-5 aspect-square mr-3'>{leftIcon}</span>}
+				<span>{label}</span>
+				{!!rightIcon &&<span className='h-5 aspect-square ml-3'>{rightIcon}</span>}
+			</div>
 		</button>
 
 	);
@@ -43,13 +53,15 @@ Button.propTypes = {
 	size: PropTypes.oneOf(["small", 'medium', "large"]),
 	onClick: PropTypes.func.isRequired,
 	filled: PropTypes.bool,
+	leftIcon: PropTypes.element,
+	rightIcon: PropTypes.element,
 }
 
 Button.defaultProps = {
 	label: 'Button',
 	style: 'primary',
 	size: "medium",
-	filled: false
+	filled: false,
 }
 
 export default Button
