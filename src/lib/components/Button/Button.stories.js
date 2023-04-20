@@ -17,8 +17,6 @@ export const WithRightIcon = Template.bind({})
 
 Primary.args = {
 	label: 'Primary',
-	leftIcon: <AcademicCapIcon />,
-	rightIcon: <AcademicCapIcon />,
 }
 Secondary.args = {
 	label: 'Secondary',
