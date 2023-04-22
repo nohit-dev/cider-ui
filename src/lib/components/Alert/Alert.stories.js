@@ -15,25 +15,25 @@ export const New = Template.bind({})
 export const Error = Template.bind({})
 
 Success.args = {
-	children: 'This is a success alert',
+	label: 'This is a success alert',
 	severity: 'success',
 }
 Warning.args = {
-	children: 'This is a warning alert',
+	label: 'This is a warning alert',
 	severity: 'warning',
 	title: 'Warning:',
 }
 Info.args = {
-	children: 'This is an info alert',
+	label: 'This is an info alert',
 	severity: 'info',
 	title: 'Info:',
 }
 New.args = {
-	children: 'This is a new alert',
+	label: 'This is a new alert',
 	severity: 'new',
 	title: 'Breaking news:',
 }
 Error.args = {
-	children: 'This is an error alert',
+	label: 'This is an error alert',
 	severity: 'error',
 }

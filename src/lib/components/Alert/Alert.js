@@ -5,9 +5,8 @@ import { classNames, getGradient } from '../../utils';
 const Alert = ({
 	severity,
 	title,
-	children
+	label
 }) => {
-	console.log(getGradient(severity))
 	return (
 		<div className={
 			classNames(
@@ -19,22 +18,17 @@ const Alert = ({
 				"flex flex-row",
 				getGradient(severity)
 			)}>
-			{title ?
-				<div className={
-					classNames(
-						"font-extrabold",
-					)
-				}>
-					{title}&nbsp;
+			{title &&
+				<div className="font-extrabold">
+					{`${title} `}
 				</div>
-				: <></>
 			}
 			<div className={
 				classNames(
 					"font-bold",
 				)
 			}>
-				{children}
+				{label}
 			</div>
 		</div>
 
@@ -43,7 +37,7 @@ const Alert = ({
 
 Alert.propTypes = {
 	title: PropTypes.string,
-	children: PropTypes.string,
+	label: PropTypes.string,
 	severity: PropTypes.oneOf(["success", "warning", "info", "processing", "new", "error"]).isRequired,
 }
 
